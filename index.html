@@ -6,18 +6,20 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h2>Welcome to Mr. Roboger's Neighborhood</h2>
-
+  <h1>It's a beautiful day in the neighborhood!</h1>
   <h4>Please enter your name and any whole number.</h4>
   <form id="number-form">
-    <label for="name-input">Name:</label>
+    <label for="name-input" id="name-box">Name:</label>
     <input id="name-input" type="text">
-    <label for="number-input">Number:</label>
+    <label for="number-input" id="number-box">Number:</label>
     <input id="number-input" type="number">
     <br><br>
-    <button type="submit">Submit</button>
-    <button type="button" id="reset-screen">Reset</button>
+    <button type="submit" id="submit-button">Submit</button>
+    <button type="button" id="reset-button">Reset</button>
   </form>
+  <br><br><br><br><br><br>
   <p id="display-array"></p>
+  <br>
+  <img id="sun-photo" src="img/sun.jpg" alt="simple crayon drawing of two-tone yellow sun with smiley face">
 </body>
 </html>

@@ -1,6 +1,6 @@
 // business logic
 function beepBoop(n) {
-  let name = addressUser();
+  const name = addressUser();
   let numbers = [];
   for (let i = 0; i <= n; i++) {
     if (i.toString().includes(1) && !i.toString().includes(2) && !i.toString().includes(3)) {
@@ -21,11 +21,11 @@ function beepBoop(n) {
 
 // ui logic
 window.addEventListener("load", function() {
-  document.getElementById("number-form").addEventListener("submit", handleFormSubmission);
-  document.getElementById("reset-screen").addEventListener("click", clearScreen);
+  document.getElementById("number-form").addEventListener("submit", submitForm);
+  document.getElementById("reset-button").addEventListener("click", clearScreen);
 });
 
-function handleFormSubmission(event) {
+function submitForm(event) {
   event.preventDefault();
   const numberInput = document.getElementById("number-input").value;
   const p = document.getElementById("display-array");

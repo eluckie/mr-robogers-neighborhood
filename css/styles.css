@@ -1,0 +1,48 @@
+h1 {
+  color:orange;
+  text-align:center;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#submit-button {
+  background-color:orange;
+  color:white;
+  display:block;
+  margin:auto;
+  font-weight:bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#reset-button {
+  float:right;
+  background-color:white;
+  color:orange;
+  font-weight:bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#number-form {
+  background-color:lightyellow;
+  padding: 15px;
+  display:block;
+  margin:auto;
+  float:left;
+}
+
+#name-box {
+  color:orange;
+  font-weight:bold;
+}
+
+#number-box {
+  color:orange;
+  font-weight:bold;
+}
+
+#sun-photo {
+  display:block;
+  margin:auto;
+}

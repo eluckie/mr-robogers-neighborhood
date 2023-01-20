@@ -14,11 +14,11 @@
 
 ## Description
 
-This webpage is intended to be a play on Mr. Roger's Neighborhood and explore JavaScript capabilities. Users are asked to input a number in the form. An array is formed starting from 0 to the number they input and then displayed back to them in numerical order with certain substitutions.
+This webpage is intended to be a play on Mr. Roger's Neighborhood and explore JavaScript capabilities. Users are asked to input their name and a number in the form. An array is formed starting from 0 to the number they input and then displayed back to them in numerical order with certain substitutions.
 
 * If a number in the array contains a 1 (but **not** a 2 or 3), the number is replaced with the phrase "Beep!"
 * If a number in the array contains a 2 (**including** if it contains a 1, but **not** if it includes a 3), the number is replaced with the phrase "Boop!"
-* If a number in the array contains a 3 (**including** if it contains a 1 or 2), the number is replaced with the phrase "Won't you be my neighbor?"
+* If a number in the array contains a 3 (**including** if it contains a 1 or 2), the number is replaced with the phrase "Won't you be my neighbor, (name)?" where (name) is the user's inputted name from the form.
 * If a number in the array **does not contain** a 1, 2, or 3, the number is displayed back in true form.
 
 [Click here](https://eluckie.github.io/mr-robogers-neighborhood/) to view the live version of this webpage.
@@ -68,7 +68,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor, Luckie?", 4, 5
 
 ## Known Bugs
 
-* No known bugs.
+* If user does not enter a name, output for '3' indexes reads "Won't you be my neighbor, ?"
 
 ## License
 
