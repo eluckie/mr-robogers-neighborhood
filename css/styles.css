@@ -7,8 +7,13 @@ h1 {
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
 h3 {
   color:orange;
+}
+
+h4 {
+  color:red;
 }
 
 #replacements {

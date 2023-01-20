@@ -27,12 +27,20 @@ window.addEventListener("load", function() {
 
 function submitForm(event) {
   event.preventDefault();
+  const name = document.getElementById("name-input").value;
   const numberInput = document.getElementById("number-input").value;
   const p = document.getElementById("display-array");
+  const errorMessage = document.getElementById("error");
   let numberArray = beepBoop(numberInput);
+
+  if (!name || !numberInput) {
+    errorMessage.removeAttribute("class");
+  } else if (name && numberInput) {
   p.innerText = numberArray.join(", ");
   const sunPhoto = document.getElementById("sun-photo");
   sunPhoto.removeAttribute("class");
+  errorMessage.setAttribute("class", "hidden");
+  }
 };
 
 function clearScreen() {
@@ -41,6 +49,8 @@ function clearScreen() {
   p.innerText = "";
   const sunPhoto = document.getElementById("sun-photo");
   sunPhoto.setAttribute("class", "hidden");
+  const errorMessage = document.getElementById("error");
+  errorMessage.setAttribute("class", "hidden");
 }
 
 function addressUser() {
