@@ -6,6 +6,10 @@ function beepBoop(n) {
       let i = "Beep!";
       numbers.push(i);
       console.log(i);
+    } else if (i === 2) {
+      let i = "Boop!";
+      numbers.push(i);
+      console.log(i);
     } else {
     numbers.push(i);
     console.log(i);

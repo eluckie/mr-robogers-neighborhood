@@ -29,3 +29,6 @@ Test 2: "It should replace the number 1 in the array with a string 'Beep!'"
 Code: beepBoop(5);
 Expected Output: [0, "Beep!", 2, 3, 4, 5];
 
+Test 3: "It should replace the number 2 in the array with a string 'Boop!'"
+Code: beepBoop(5);
+Expected Output: [0, "Beep!", "Boop!", 3, 4, 5]
