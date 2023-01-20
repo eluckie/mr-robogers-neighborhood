@@ -2,7 +2,7 @@
 function beepBoop(n) {
   let numbers = [];
   for (let i = 0; i <= n; i++) {
-    if (i === 1) {
+    if (i === 1 || i.toString().includes(1)) {
       let i = "Beep!";
       numbers.push(i);
       console.log(i);

@@ -37,3 +37,6 @@ Test 4: "It should replace the number 3 in the array with a string 'Won't you be
 Code: beepBoop(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
 
+Test 5: "It should replace all numbers that include the number 1 with 'Beep!' regardless of if there's additional numbers in the input"
+Code: beepBoop(10);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!"] 
