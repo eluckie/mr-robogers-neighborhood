@@ -2,11 +2,11 @@
 function beepBoop(n) {
   let numbers = [];
   for (let i = 0; i <= n; i++) {
-    if (i === 1 || i.toString().includes(1)) {
+    if (i === 1 || i.toString().includes(1) && !i.toString().includes(2)) {
       let i = "Beep!";
       numbers.push(i);
       console.log(i);
-    } else if (i === 2) {
+    } else if (i === 2 || i.toString().includes(2)) {
       let i = "Boop!";
       numbers.push(i);
       console.log(i);
