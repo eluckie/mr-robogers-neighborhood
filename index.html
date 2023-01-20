@@ -7,8 +7,13 @@
 </head>
 <body>
   <h1>It's a beautiful day in the neighborhood!</h1>
-  <h4>Please enter your name and any whole number.</h4>
+  <div id="replacements">
+    <p>Please enter your name and any whole number in the form to count from 0 to your number, with some fun number substitutions.</p>
+    <h3>Beep! Boop! Won't you be my neighbor?</h3>
+  </div>
+
   <form id="number-form">
+    <h4>Please enter your name and any whole number.</h4>
     <label for="name-input" id="name-box">Name:</label>
     <input id="name-input" type="text">
     <label for="number-input" id="number-box">Number:</label>
@@ -17,9 +22,11 @@
     <button type="submit" id="submit-button">Submit</button>
     <button type="button" id="reset-button">Reset</button>
   </form>
-  <br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br>
   <p id="display-array"></p>
   <br>
-  <img id="sun-photo" src="img/sun.jpg" alt="simple crayon drawing of two-tone yellow sun with smiley face">
+  <div id="sun-photo" class="hidden">
+    <img id="sun" src="img/sun.jpg" alt="simple crayon drawing of two-tone yellow sun with smiley face">
+  </div>
 </body>
 </html>

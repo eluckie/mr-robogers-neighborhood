@@ -1,10 +1,18 @@
 h1 {
   color:orange;
   text-align:center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h3 {
+  color:orange;
+}
+
+#replacements {
+  text-align:center;
 }
 
 #submit-button {
@@ -27,7 +35,6 @@ body {
 #number-form {
   background-color:lightyellow;
   padding: 15px;
-  display:block;
   margin:auto;
   float:left;
 }
@@ -42,7 +49,11 @@ body {
   font-weight:bold;
 }
 
-#sun-photo {
+#sun {
   display:block;
   margin:auto;
+}
+
+.hidden {
+  display:none;
 }

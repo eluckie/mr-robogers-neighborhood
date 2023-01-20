@@ -69,6 +69,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor, Luckie?", 4, 5
 ## Known Bugs
 
 * If user does not enter a name, output for '3' indexes reads "Won't you be my neighbor, ?"
+* If user does not enter a number, on submit, a 0 is displayed.
 
 ## License
 

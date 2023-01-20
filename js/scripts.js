@@ -31,12 +31,16 @@ function submitForm(event) {
   const p = document.getElementById("display-array");
   let numberArray = beepBoop(numberInput);
   p.innerText = numberArray.join(", ");
+  const sunPhoto = document.getElementById("sun-photo");
+  sunPhoto.removeAttribute("class");
 };
 
 function clearScreen() {
   document.getElementById("number-form").reset();
   const p = document.getElementById("display-array");
   p.innerText = "";
+  const sunPhoto = document.getElementById("sun-photo");
+  sunPhoto.setAttribute("class", "hidden");
 }
 
 function addressUser() {
