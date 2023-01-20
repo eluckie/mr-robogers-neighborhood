@@ -43,4 +43,8 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 
 Test 6: "If a number includes a 2, it should replace that with 'Boop!' regardless if there's additional numbers, including a 1"
 Code: beepBoop(15);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Beep!", "Beep!", "Beep!"] 
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Beep!", "Beep!", "Beep!"]
+
+Test 7: "If a number includes a 3, it should replace that with 'Won't you be my neighbor?' regardless if there's additional numbers, including a 1 or 2"
+Code: beepBoop(15);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!"]
