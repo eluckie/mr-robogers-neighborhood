@@ -20,13 +20,12 @@ function beepBoop(n) {
 
 // ui logic
 window.addEventListener("load", function() {
-  document.querySelector("form#number-form").addEventListener("submit", handleFormSubmission);
-  document.getElementById("clear-screen").addEventListener("click", clearScreen);
+  document.getElementById("number-form").addEventListener("submit", handleFormSubmission);
+  document.getElementById("reset-screen").addEventListener("click", clearScreen);
 });
 
 function handleFormSubmission(event) {
   event.preventDefault();
-  const div = document.getElementById("user-array");
   const numberInput = document.getElementById("number-input").value;
   const p = document.getElementById("display-array");
   let numberArray = beepBoop(numberInput);
@@ -35,7 +34,6 @@ function handleFormSubmission(event) {
 
 function clearScreen() {
   document.getElementById("number-form").reset();
-  const div = document.getElementById("user-array");
   const p = document.getElementById("display-array");
   p.innerText = "";
 }
