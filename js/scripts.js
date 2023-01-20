@@ -10,6 +10,10 @@ function beepBoop(n) {
       let i = "Boop!";
       numbers.push(i);
       console.log(i);
+    } else if (i === 3) {
+      let i = "Won't you be my neighbor?";
+      numbers.push(i);
+      console.log(i);
     } else {
     numbers.push(i);
     console.log(i);
