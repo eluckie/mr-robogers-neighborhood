@@ -31,26 +31,27 @@ function submitForm(event) {
   const numberInput = document.getElementById("number-input").value;
   const p = document.getElementById("display-array");
   const errorMessage = document.getElementById("error");
+  const sunPhoto = document.getElementById("sun-photo");
   let numberArray = beepBoop(numberInput);
 
   if (!name || !numberInput) {
     errorMessage.removeAttribute("class");
   } else if (name && numberInput) {
-  p.innerText = numberArray.join(", ");
-  const sunPhoto = document.getElementById("sun-photo");
-  sunPhoto.removeAttribute("class");
-  errorMessage.setAttribute("class", "hidden");
+    p.innerText = numberArray.join(", ");
+    sunPhoto.removeAttribute("class");
+    errorMessage.setAttribute("class", "hidden");
   }
 };
 
 function clearScreen() {
-  document.getElementById("number-form").reset();
   const p = document.getElementById("display-array");
-  p.innerText = "";
   const sunPhoto = document.getElementById("sun-photo");
-  sunPhoto.setAttribute("class", "hidden");
   const errorMessage = document.getElementById("error");
+
+  p.innerText = "";
+  sunPhoto.setAttribute("class", "hidden");
   errorMessage.setAttribute("class", "hidden");
+  document.getElementById("number-form").reset();
 }
 
 function addressUser() {
