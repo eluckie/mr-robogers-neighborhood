@@ -1,5 +1,6 @@
 // business logic
 function beepBoop(n) {
+  const name = document.getElementById("name-input").value;
   let numbers = [];
   for (let i = 0; i <= n; i++) {
     if (i.toString().includes(1) && !i.toString().includes(2) && !i.toString().includes(3)) {
@@ -9,7 +10,7 @@ function beepBoop(n) {
       let i = "Boop!";
       numbers.push(i);
     } else if (i.toString().includes(3)) {
-      let i = "Won't you be my neighbor?";
+      let i = "Won't you be my neighbor, ".concat(name).concat("?");
       numbers.push(i);
     } else {
     numbers.push(i)
