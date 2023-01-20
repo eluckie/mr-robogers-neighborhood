@@ -19,15 +19,16 @@ function beepBoop(n) {
 }
 
 // ui logic
-window.onload = function() {
-  document.querySelector("form#number-form").onsubmit = function(event) {
-    event.preventDefault();
-    beepBoop();
-    const div = document.getElementById("user-array");
-    const numberInput = document.getElementById("number-input").value;
-    let p = document.createElement("p");
-    let numberArray = beepBoop(numberInput);
-    p.innerText = numberArray.join(", ");
-    div.append(p);
-  };
+window.addEventListener("load", function() {
+  document.querySelector("form#number-form").addEventListener("submit", handleFormSubmission);
+});
+
+function handleFormSubmission (event) {
+  event.preventDefault();
+  const div = document.getElementById("user-array");
+  const numberInput = document.getElementById("number-input").value;
+  let p = document.createElement("p");
+  let numberArray = beepBoop(numberInput);
+  p.innerText = numberArray.join(", ");
+  div.append(p);
 };
