@@ -54,6 +54,12 @@ Test 7: "It should replace all numbers that include the number 3 with 'Won't you
 Code: beepBoop(15);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep!"]
 
+Test 8: "It should replace all numbers that include the number 3 with 'Won't you be my neighbor, (name)?' regardless of if there's additional numbers in the input, including a 1 or 2"
+Code: 
+let name = Luckie
+beepBoop(5);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor, Luckie?", 4, 5]
+
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
