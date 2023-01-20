@@ -1,6 +1,6 @@
 // business logic
 function beepBoop(n) {
-  const name = document.getElementById("name-input").value;
+  let name = addressUser();
   let numbers = [];
   for (let i = 0; i <= n; i++) {
     if (i.toString().includes(1) && !i.toString().includes(2) && !i.toString().includes(3)) {
@@ -37,4 +37,9 @@ function clearScreen() {
   document.getElementById("number-form").reset();
   const p = document.getElementById("display-array");
   p.innerText = "";
+}
+
+function addressUser() {
+  const name = document.getElementById("name-input").value;
+  return name;
 }
