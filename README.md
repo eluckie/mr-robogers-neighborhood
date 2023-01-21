@@ -14,7 +14,7 @@
 
 ## Description
 
-This webpage is intended to be a nod to Mr. Roger's Neighborhood and explore JavaScript capabilities. Users are asked to input their name and a number in the form. An array is formed starting from 0 to the number they input. A drawing of the sun is displayed back to the user along with their array in numerical order with certain substitutions. If the user fails to input a name or number, an error message displays reminding them to enter both pieces of information. 
+This webpage is intended to be a nod to Mr. Roger's Neighborhood and explore JavaScript capabilities. Users are asked to input their name and a number in the form. An array is formed starting from 0 to the number they input. A drawing of the sun is displayed back to the user along with their array in numerical order with certain substitutions. If the user fails to input a name or number, an error message displays reminding them to enter both pieces of information. When user hovers over "Beep! Boop! Won't you be my neighbor?" orange text, the text will rotate.
 
 * If a number in the array contains a 1 (but **not** a 2 or 3), the number is replaced with the phrase "Beep!"
 * If a number in the array contains a 2 (**including** if it contains a 1, but **not** if it includes a 3), the number is replaced with the phrase "Boop!"
