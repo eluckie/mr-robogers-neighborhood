@@ -10,6 +10,22 @@ body {
 
 h3 {
   color:orange;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align:center;
+}
+
+h3:hover {
+  animation-name: rotate;
+  animation-duration: 2.0s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h4 {

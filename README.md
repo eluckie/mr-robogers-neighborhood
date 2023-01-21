@@ -24,7 +24,7 @@ This webpage is intended to be a nod to Mr. Roger's Neighborhood and explore Jav
 [Click here](https://eluckie.github.io/mr-robogers-neighborhood/) to view the live version of this webpage.
 
 ## Test-Driven Development Tests
-Describe beepBoop();
+#### Describe beepBoop();
 
 Test 1: "It should return an array of numbers from 0 to user's inputted number"
 Code: beepBoop(5);
@@ -56,7 +56,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 
 Test 8: "It should replace all numbers that include the number 3 with 'Won't you be my neighbor, (name)?' regardless of if there's additional numbers in the input, including a 1 or 2"
 Code: 
-let name = Luckie
+let name = Luckie;
 beepBoop(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor, Luckie?", 4, 5]
 
