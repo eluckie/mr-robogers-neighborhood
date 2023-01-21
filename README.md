@@ -60,6 +60,15 @@ let name = Luckie;
 beepBoop(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor, Luckie?", 4, 5]
 
+#### Describe beepBoopReverse();
+
+Test 1: "It should display array in reverse if user clicks 'reverse order' button rather than submit"
+Code:
+let name = Luckie;
+beepBoopReverse(5);
+Expected Output: [5, 4, "Won't you be my neighbor, Luckie?", "Boop!", "Beep!", 0]
+
+
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop

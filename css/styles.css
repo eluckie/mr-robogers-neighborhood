@@ -58,6 +58,15 @@ h3:hover {
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+#reverse-button {
+  background-color:orange;
+  color:white;
+  display:block;
+  margin:auto;
+  font-weight:bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 #reset-button {
   float:right;
   background-color:white;
