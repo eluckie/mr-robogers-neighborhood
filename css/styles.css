@@ -97,6 +97,11 @@ h3:hover {
   margin:auto;
 }
 
+#rainbow {
+  display:block;
+  margin:auto;
+}
+
 .hidden {
   display:none;
 }

@@ -56,6 +56,7 @@ function submitForm(event) {
   const p = document.getElementById("display-array");
   const errorMessage = document.getElementById("error");
   const sunPhoto = document.getElementById("sun-photo");
+  const rainbowPhoto = document.getElementById("rainbow-photo");
   let numberArray = beepBoop(numberInput);
 
   if (!name || !numberInput) {
@@ -63,6 +64,7 @@ function submitForm(event) {
   } else if (name && numberInput) {
     p.innerText = numberArray.join(", ");
     sunPhoto.removeAttribute("class");
+    rainbowPhoto.setAttribute("class", "hidden");
     errorMessage.setAttribute("class", "hidden");
   }
 };
@@ -73,13 +75,15 @@ function reverseOrder() {
   const p = document.getElementById("display-array");
   const errorMessage = document.getElementById("error");
   const sunPhoto = document.getElementById("sun-photo");
+  const rainbowPhoto = document.getElementById("rainbow-photo");
   let numberArray = beepBoopReverse(numberInput);
 
   if (!name || !numberInput) {
     errorMessage.removeAttribute("class");
   } else if (name && numberInput) {
     p.innerText = numberArray.join(", ");
-    sunPhoto.removeAttribute("class");
+    rainbowPhoto.removeAttribute("class");
+    sunPhoto.setAttribute("class", "hidden");
     errorMessage.setAttribute("class", "hidden");
   }
 }
@@ -87,10 +91,12 @@ function reverseOrder() {
 function clearScreen() {
   const p = document.getElementById("display-array");
   const sunPhoto = document.getElementById("sun-photo");
+  const rainbowPhoto = document.getElementById("rainbow-photo");
   const errorMessage = document.getElementById("error");
 
   p.innerText = "";
   sunPhoto.setAttribute("class", "hidden");
+  rainbowPhoto.setAttribute("class", "hidden");
   errorMessage.setAttribute("class", "hidden");
   document.getElementById("number-form").reset();
 }
